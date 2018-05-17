@@ -1,0 +1,22 @@
+{
+  "name": "npr",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "gh-pages": "^1.1.0",
+    "react-scripts": "1.1.4"
+  },
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "homepage": "http://cjessett.github.io/myNPR"
+}

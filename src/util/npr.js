@@ -8,7 +8,8 @@ function NPR() {
 function buildStation(item) {
   const { links, attributes: { brand: { call, frequency, name, marketCity, marketState } } } = item;
   const { brand } = links;
-  const image = brand.find(b => b.rel === 'small-logo').href
+  const logo = brand.find(b => b.rel === 'small-logo');
+  const image = logo && logo.href;
   return { name, frequency, call, marketCity, marketState, image };
 }
 
